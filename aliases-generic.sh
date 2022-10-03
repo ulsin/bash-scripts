@@ -8,9 +8,10 @@ alias grep='grep --color=auto'
 #python shorthand
 alias py='python'
 
-# to avoid sudo on these two
+# to avoid sudo on these commands
 alias pacman="sudo pacman"
 alias systemctl="sudo systemctl"
+alias docker="sudo docker"
 
 # to use tree recklessly
 alias tree="tree -L 2"
