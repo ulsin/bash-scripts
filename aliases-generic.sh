@@ -24,5 +24,4 @@ alias code="code 2> /dev/null"
 alias config='/usr/bin/git --git-dir=/home/ulsin/synced-config/ --work-tree=/home/ulsin'
 
 # for sway
-alias sway="source sway-nvidia.sh"
-
+#alias sway="source /home/ulsin/code/bash-scripts/sway-nvidia.start"
