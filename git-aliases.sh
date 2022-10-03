@@ -71,6 +71,20 @@ function grr() {
   git remote remove "$1"
 }
 
+function greha() {
+  # running git status to let user know what they are doing
+  gs
+
+  echo "are you sure you want to reset everything to previous commit? (y/n)"
+
+  read answer
+
+  if [ "$answer" == "y" ]
+  then
+    it reset --hard HEAD
+  fi
+}
+
 function ghelp() {
   echo "
     GENERAL
@@ -129,7 +143,6 @@ alias g='git'
 alias gd='git diff'
 alias gs='git status -s'
 alias gls='git ls-files'
-alias greha='git reset --hard HEAD'
 
 alias ga='git add'
 alias gaa='git add --all --verbose'
