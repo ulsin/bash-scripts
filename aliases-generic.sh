@@ -22,3 +22,6 @@ alias code="code 2> /dev/null"
 
 # for the wack config repo thing
 alias config='/usr/bin/git --git-dir=/home/ulsin/synced-config/ --work-tree=/home/ulsin'
+
+# for sway
+alias sway="sway --unsupported-gpu"
