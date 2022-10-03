@@ -24,4 +24,5 @@ alias code="code 2> /dev/null"
 alias config='/usr/bin/git --git-dir=/home/ulsin/synced-config/ --work-tree=/home/ulsin'
 
 # for sway
-alias sway="sway --unsupported-gpu"
+alias sway="source sway-nvidia.sh"
+
