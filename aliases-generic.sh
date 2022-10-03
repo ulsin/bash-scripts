@@ -12,6 +12,7 @@ alias py='python'
 alias pacman="sudo pacman"
 alias systemctl="sudo systemctl"
 alias docker="sudo docker"
+alias docker-compose="sudo docker-compose"
 
 # to use tree recklessly
 alias tree="tree -L 2"
