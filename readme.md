@@ -1,6 +1,6 @@
 ## readme
 
-These are bash scripts that i source in my .bashrc with a command like this:
+These are bash scripts that i source in my `.bashrc` with a command like this:
 
 ```bash
 # sourcing files in bash functions
