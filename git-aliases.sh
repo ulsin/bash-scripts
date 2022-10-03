@@ -73,15 +73,13 @@ function grr() {
 
 function greha() {
   # running git status to let user know what they are doing
-  gs
+  git status -s
 
-  echo "are you sure you want to reset everything to previous commit? (y/n)"
-
-  read answer
+  read -p "are you sure you want to reset everything to previous commit? (y/n) " answer
 
   if [ "$answer" == "y" ]
   then
-    it reset --hard HEAD
+    git reset --hard HEAD
   fi
 }
 
