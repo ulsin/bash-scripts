@@ -24,4 +24,8 @@ alias code="code 2> /dev/null"
 alias config='/usr/bin/git --git-dir=/home/ulsin/synced-config/ --work-tree=/home/ulsin'
 
 # for sway
+# this one just broke anything, can't soruce this during start
 #alias sway="source /home/ulsin/code/bash-scripts/sway-nvidia.start"
+
+# conda init, allows you to do conda activate
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
