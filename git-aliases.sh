@@ -88,9 +88,15 @@ function ghelp() {
     GENERAL
     ====================
     g     = git
-    gd    = git diff
     gs    = git status -s
     gls   = git ls-files
+
+    gd    = git diff
+    gds   = git diff --staged
+    gdc   = git diff --cached
+
+    gre   = git restore # for restoring unstaged changes
+    gres  = git restore --staged # for restoring staged changes
     greha = git reset --hard HEAD
 
     ga    = git add
@@ -138,9 +144,15 @@ function ghelp() {
 
 ## Aliases
 alias g='git'
-alias gd='git diff'
 alias gs='git status -s'
 alias gls='git ls-files'
+
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gdc='git diff --cached'
+
+alias gre='git restore'
+alias gres='git restore --staged'
 
 alias ga='git add'
 alias gaa='git add --all --verbose'
