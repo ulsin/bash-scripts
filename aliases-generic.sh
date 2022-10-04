@@ -29,3 +29,8 @@ alias config='/usr/bin/git --git-dir=/home/ulsin/synced-config/ --work-tree=/hom
 
 # conda init, allows you to do conda activate
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+# ciding into a directory and opening code there
+cdcode() {
+  cd "$@" && code .
+}
