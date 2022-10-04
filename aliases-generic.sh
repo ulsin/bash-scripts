@@ -34,3 +34,9 @@ alias config='/usr/bin/git --git-dir=/home/ulsin/synced-config/ --work-tree=/hom
 cdcode() {
   cd "$@" && code .
 }
+
+# cp() {
+#   rsync -ah --progress $1 $2
+# }
+
+alias cp="rsync -avzh --progress"
