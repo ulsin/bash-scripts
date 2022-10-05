@@ -99,7 +99,8 @@ function ghelp() {
     gres  = git restore --staged # for restoring staged changes
     greha = git reset --hard HEAD
 
-    ga    = git add
+    ga    = git add --verbose
+    gam   = git add -u --verbose
     gaa   = git add --all --verbose
     gap   = git add --patch
     
@@ -154,7 +155,8 @@ alias gdc='git diff --cached'
 alias gre='git restore' # for restoring unstaged changes
 alias gres='git restore --staged' # for removing file from added
 
-alias ga='git add'
+alias ga='git add --verbose'
+alias gam='git add -u --verbose'
 alias gaa='git add --all --verbose'
 alias gap='git add --patch' # interactive add that let's you add "hunks" of files (or split into smaller hunks) if you accidently made many unrelated changes that you want to keep in each of their own commits
 
