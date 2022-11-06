@@ -8,6 +8,8 @@ alias grep='grep --color=auto'
 #python shorthand
 alias py='python'
 
+alias diff='diff --color=auto'
+
 # to avoid sudo on these commands
 alias pacman="sudo pacman"
 alias systemctl="sudo systemctl"
