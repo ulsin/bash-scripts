@@ -1,0 +1,17 @@
+bemoji-git
+gnome-books
+gnome-browser-connector
+google-chrome
+nerd-fonts-jetbrains-mono
+otf-ibm-plex
+pandoc-bin
+pfetch
+powerline-fonts-git
+python-eduvpn-client
+sov
+spotify
+sway-nvidia
+vino
+visual-studio-code-bin
+wev
+yay
