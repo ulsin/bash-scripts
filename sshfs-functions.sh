@@ -1,7 +1,7 @@
-nmap_local () {
-	network_address=$(ip route | tail -n 1 | cut -d" " -f1)
-	nmap -sn $network_address
-}
+# nmap_local () {
+# 	network_address=$(ip route | tail -n 1 | cut -d" " -f1)
+# 	nmap -sn $network_address
+# }
 
 sshfs_t470 () {
 	laptop_ip=192.168.50.30

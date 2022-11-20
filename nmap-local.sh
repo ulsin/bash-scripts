@@ -1,7 +1,7 @@
 nmap-local() {
   network_address=$(ip route | tail -n 1 | cut -d" " -f1)
 
-  echo "Scanning local network: ${network_address}"
+  echo -e "Scanning local network: ${network_address} \n"
 
   nmap_raport=$(nmap -sn $network_address)
 
