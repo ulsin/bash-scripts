@@ -42,3 +42,8 @@ cdcode() {
 # }
 
 alias cp="rsync -avzh --progress"
+
+# to get color on man pages
+export MANPAGER="less -R --use-color -Dd+r -Du+b"
+
+alias cat="bat -p"
