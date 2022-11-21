@@ -8,3 +8,12 @@ sshfs_t470 () {
 	echo $laptop_ip
 	sudo sshfs -o allow_other,follow_symlinks cere@$laptop_ip: /run/media/ulsin/T470
 }
+
+sshfs_desktop() {
+	# test if hostname is not desktop
+	if [[ "$HOSTNAME" != "desktop" ]]; then
+  mkdir -p sshfs-desktop && sudo sshfs -o allow_other,follow_symlinks ulsin@desktop: ./sshfs-desktop
+	else
+		echo "You are already on desktop"
+	fi
+}
