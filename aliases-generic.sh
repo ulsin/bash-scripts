@@ -47,3 +47,5 @@ alias cp="rsync -avzh --progress"
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 
 alias cat="bat -p"
+
+alias df="df -h | grep -E 'Filesystem|/home/|/$'"
