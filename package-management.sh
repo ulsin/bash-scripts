@@ -17,7 +17,7 @@ package-diff() {
   for file in $backupdir/pkglist-*.txt; do
     if [[ $file != $backupdir/pkglist-$HOSTNAME.txt ]]; then
       echo "Diff between $HOSTNAME and $(basename $file | cut -d'-' -f2 | cut -d'.' -f1)"
-      diff $backupdir/pkglist-$HOSTNAME.txt $file
+      diff $backupdir/pkglist-$HOSTNAME.txt $file | grep -E '^[>]'
     fi
     # echo "Diff for $file"
     # diff $file $backupdir/pkglist-$HOSTNAME.txt
