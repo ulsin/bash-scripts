@@ -16,7 +16,7 @@ package-update-count() {
 package-diff() {
   for file in $backupdir/pkglist-*.txt; do
     if [[ $file != $backupdir/pkglist-$HOSTNAME.txt ]]; then
-      echo "Diff between $HOSTNAME and $(basename $file | cut -d'-' -f2 | cut -d'.' -f1)"
+      echo "Packages $(basename $file | cut -d'-' -f2 | cut -d'.' -f1) has, but $HOSTNAME doesn't:"
       diff $backupdir/pkglist-$HOSTNAME.txt $file | grep -E '^[>]'
     fi
     # echo "Diff for $file"
