@@ -23,12 +23,12 @@ alias tree="tree -L 2"
 alias code="code 2> /dev/null"
 
 # for the wack config repo thing
-# alias config='/usr/bin/git --git-dir=/home/ulsin/synced-config/ --work-tree=/home/ulsin'
-alias config='/usr/bin/git --git-dir=/home/ulsin/.config-git-dir/ --work-tree=/home/ulsin'
+# alias config='/usr/bin/git --git-dir=$HOME/synced-config/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.config-git-dir/ --work-tree=$HOME'
 
 # for sway
 # this one just broke anything, can't soruce this during start
-#alias sway="source /home/ulsin/code/bash-scripts/sway-nvidia.start"
+#alias sway="source $HOME/code/bash-scripts/sway-nvidia.start"
 
 # ciding into a directory and opening code there
 cdcode() {
