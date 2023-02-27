@@ -7,3 +7,6 @@ else
   echo " "
   pfetch
 fi
+
+cat $HOME/code/bash-scripts/.pkg-count.txt
+echo " "

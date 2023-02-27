@@ -1,4 +1,5 @@
 backupdir=$HOME/.package-lists
+countFile=$HOME/code/bash-scripts/.pkg-count.txt
 
 package-backup() {
   # make sure we have a backup directory
@@ -9,8 +10,8 @@ package-backup() {
 }
 
 package-update-count() {
-  echo "Pacman packages to update:    $(checkupdates | wc -l)"
-  echo "Aur packages to update:       $(yay -Qu | wc -l)"
+  printf "  Pacman packages to update:    $(checkupdates | wc -l) \n  AUR packages to update:       $(yay -Qu | wc -l)" > $countFile
+  # echo "Aur packages to update:       $(yay -Qu | wc -l)"
 }
 
 package-diff() {
