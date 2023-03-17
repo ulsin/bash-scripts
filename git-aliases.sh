@@ -91,9 +91,9 @@ function ghelp() {
     gs    = git status -s
     gls   = git ls-files
 
-    gd    = git diff
-    gds   = git diff --staged
-    gdc   = git diff --cached
+    gd    = git diff --word-diff
+    gds   = gd --staged
+    gdc   = gd --cached
 
     gre   = git restore # for restoring unstaged changes
     gres  = git restore --staged # for restoring staged changes
@@ -148,9 +148,9 @@ alias g='git'
 alias gs='git status -s'
 alias gls='git ls-files'
 
-alias gd='git diff'
-alias gds='git diff --staged'
-alias gdc='git diff --cached'
+alias gd='git diff --word-diff'
+alias gds='gd --staged'
+alias gdc='gd --cached'
 
 alias gre='git restore' # for restoring unstaged changes
 alias gres='git restore --staged' # for removing file from added
@@ -177,4 +177,4 @@ alias gbdf='git branch -D'
 
 alias gr='git remote -v'
 
-alias gh=ghelp
+alias gh='ghelp | cat'
