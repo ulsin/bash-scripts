@@ -11,56 +11,48 @@ function gca() {
   git commit --amend --no-edit
 }
 
-function gcnew() {
-  gcm "📦 NEW: $@"
+function gcb() {
+  gcm "build: $@"
 }
 
-function gcupg() {
-  gcm "🆙 UPGRADE: $@"
+function gcch() {
+  gcm "chore: $@"
 }
 
-function gcimp() {
-  gcm "👌 IMPROVE: $@"
+function gcci() {
+  gcm "ci: $@"
 }
 
-function gcmin() {
-  gcm "🤏 MINOR: $@"
+function gcd() {
+  gcm "docs: $@"
 }
 
-function gcref() {
-  gcm "🔨 REFACTOR: $@"
+function gcft() {
+  gcm "feat: $@"
 }
 
 function gcfix() {
-  gcm "🐛 FIX: $@"
+  gcm "fix: $@"
 }
 
-function gcbug() {
-  gcfix "$@"
+function gcp() {
+  gcm "perf: $@"
 }
 
-function gcrel() {
-  gcm "🚀 RELEASE: $@"
+function gcref() {
+  gcm "refactor: $@"
 }
 
-function gcdoc() {
-  gcm "📖 DOC: $@"
+function gcrev() {
+  gcm "revert: $@"
 }
 
-function gctst() {
-  gcm "✅ TEST: $@"
+function gcs() {
+  gcm "style: $@"
 }
 
-function gcmrg() {
-  gcm "🔀 MERGE: $@"
-}
-
-function gcrmv() {
-  gcm "❌ REMOVE: $@"
-}
-
-function gccln() {
-  gcm "🧹 CLEAN-UP: $@"
+function gct() {
+  gcm "test: $@"
 }
 
 function gra() {
@@ -127,19 +119,18 @@ function ghelp() {
     gcm   = git commit -m
     gca   = git commit --amend --no-edit (amend last commit, keep message)
 
-    gcnew = 📦 NEW
-    gcupg = 🆙 UPGRADE
-    gcimp = 👌 IMPROVE
-    gcmin = 🤏 MINOR
-    gcref = 🔨 REFACTOR
-    gcfix = 🐛 FIX
-    gcbug = 🐛 FIX
-    gcrel = 🚀 RELEASE
-    gcdoc = 📖 DOC
-    gctst = ✅ TEST
-    gcmrg = 🔀 MERGE
-    gcrmv = ❌ REMOVE
-    gccln = 🧹 CLEAN-UP
+    gcb   = build
+    gcch  = chore
+    gcci  = ci
+    gcd   = docs
+    gcft  = feat
+    gcfix = fix
+    gcp   = perf
+    gcref = refac
+    gcrev = rever
+    gcs   = style
+    gct   = test
+
   "
 }
 
