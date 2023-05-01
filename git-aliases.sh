@@ -75,6 +75,16 @@ function greha() {
   fi
 }
 
+function gp() {
+  trackingBranch=$(git rev-parse --abbrev-ref --symbolic-full-name @{u} 2>&1)
+  currentBranch=$(git branch --show-current)
+  if [[ "$trackingBranch" == *"fatal"* ]]; then
+    git push --set-upstream origin $currentBranch
+  else
+    git push
+  fi
+}
+
 function ghelp() {
   echo "
     GENERAL
@@ -154,15 +164,15 @@ alias gap='git add --patch' # interactive add that let's you add "hunks" of file
 alias gc='git commit'
 alias gcm='git commit -m'
 
-alias gp='git push'
+#alias gp='git push'
 alias gpl='git pull'
-alias gf='git fetch
-'
+alias gf='git fetch'
 alias gl='git log --decorate --graph'
 alias glo='git log --oneline --graph'
 
 alias gco='git checkout'
 alias gnb='git checkout -b'
+alias gb='git branch -vv'
 alias gbd='git branch -d'
 alias gbdf='git branch -D'
 
