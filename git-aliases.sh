@@ -81,7 +81,7 @@ function gp() {
   if [[ "$trackingBranch" == *"fatal"* ]]; then
     git push --set-upstream origin $currentBranch
   else
-    git push
+    git push $@
   fi
 }
 
